@@ -4,8 +4,7 @@ import Header from "./components/Header.jsx";
 import { db } from "./data/db.js";
 
 function App() {
- 
-  const [data,setData] = useState(db)  
+  const [data, setData] = useState(db);
 
   return (
     <>
@@ -15,14 +14,12 @@ function App() {
         <h2 className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
-         <Card></Card>
-         <Card></Card>
-         <Card></Card>
-         <Card></Card>
-         <Card></Card>3
-         <Card></Card>
-         <Card></Card>
-
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>3<Card></Card>
+          <Card></Card>
         </div>
       </main>
 
