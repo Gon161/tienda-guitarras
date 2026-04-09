@@ -15,14 +15,13 @@ function App() {
         <h2 className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
-          <Card></Card>
-          
+          {data.map((guitarra) => (
+            <Card key={guitarra.id} guitarra={guitarra} />
+          ))}
         </div>
       </main>
 
       <Footer></Footer>
-
-      
     </>
   );
 }
