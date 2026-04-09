@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "./components/Card.jsx";
 import Header from "./components/Header.jsx";
+import Footer from "./components/footer.jsx";
 import { db } from "./data/db.js";
 
 function App() {
@@ -15,21 +16,13 @@ function App() {
 
         <div className="row mt-5">
           <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>3<Card></Card>
-          <Card></Card>
+          
         </div>
       </main>
 
-      <footer className="bg-dark mt-5 py-5">
-        <div className="container-xl">
-          <p className="text-white text-center fs-4 mt-4 m-md-0">
-            GuitarLA - Todos los derechos Reservados
-          </p>
-        </div>
-      </footer>
+      <Footer></Footer>
+
+      
     </>
   );
 }
