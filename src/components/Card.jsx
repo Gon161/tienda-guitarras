@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Card({ guitarra }) {
+export default function Card({ guitarra, setCart }) {
+ 
   return (
     <>
       <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -12,12 +13,16 @@ export default function Card({ guitarra }) {
           />
         </div>
         <div className="col-8">
-          <h3 className="text-black fs-4 fw-bold text-uppercase">{guitarra.name}</h3>
-          <p>
-           {guitarra.description}
-          </p>
+          <h3 className="text-black fs-4 fw-bold text-uppercase">
+            {guitarra.name}
+          </h3>
+          <p>{guitarra.description}</p>
           <p className="fw-black text-primary fs-3">${guitarra.price}</p>
-          <button type="button" className="btn btn-dark w-100">
+          <button
+            type="button"
+            className="btn btn-dark w-100"
+            onClick={() => setCart(preCart=>[...preCart,guitarra])}
+          >
             Agregar al Carrito
           </button>
         </div>
